@@ -674,6 +674,9 @@ for game in games:
 
 df = pd.DataFrame(data_rows)
 
+df.to_csv("recent_load_detailed.csv", index=False)
+
+
 
 import joblib
 
