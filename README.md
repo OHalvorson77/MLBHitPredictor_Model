@@ -52,6 +52,18 @@ These results strongly suggest that the model is capable of identifying ineffici
 
 
 
+HOW TO RUN AND TRY ON YOUR OWN
+
+1. Clone this github to a repo on your local machine
+2. Run the training_model.py script, alter the start_date and end_date to the period you want to train based on (Can take very long to feature engineer depending on how wide the start and end date are)
+3. Find the excel that the training data was stored in
+4. Alter completing_model.py script to link to the excel your training data is in
+5. Run completing_model.py and it should find the best decision tree classifier parameters and save the model to your local directory
+6. Run new_predict.py with your model and the date you are looking to predict for, and it should output recent_load_detailed excel file (games after being feature engineered), and it should output recent_load excel file which is the games with their score and run predictions, with columns showing different betting sites odds too.
+
+
+
+
 
 
 
